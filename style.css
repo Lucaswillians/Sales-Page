@@ -1,0 +1,236 @@
+body
+{
+    background-color: black;
+    color: white;
+    font-family:monospace;
+    font-size: 110%;
+}
+
+header
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.logo
+{
+    margin-left: 25px;
+    max-width: 170px;
+    max-height: 70px;
+    width: auto;
+    height: auto;
+}
+
+#Search
+{
+    color: wheat;
+    margin-right: 25px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color:aqua;
+    background-color: black;
+    
+}
+
+.content {
+    height: 400px;
+    width: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 53.5%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    top: 550px;
+    bottom: 200px;
+    left: 260px;
+    
+    display: flex;
+}
+
+.bar {
+
+    width: 15px;
+    height: 15px;
+    border: 2px solid aqua;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+
+}
+
+.bar:hover {
+    background-color: rgb(10, 10, 10);
+}
+
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;;
+}
+
+.slides input
+{
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+} 
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+} 
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+} 
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+} 
+
+.title
+{
+    font-size: 150%;
+}
+
+.info
+{
+    margin-top: 62px;
+    margin-left: 660px;
+    margin-right: 450px;
+    width: 600px;
+}
+
+.sizes-btn
+{
+    margin-top: 40px;
+}
+
+
+.size
+{
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: #00ffff;
+    background-color: black;
+    color: aliceblue;
+    height: 60px;
+    width: 150px;
+}
+
+.size:hover
+{
+    cursor: pointer;
+    background-color: rgb(24, 18, 18);
+    transition: 0.5s;
+}
+
+#tabela-medida-btn
+{
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: aqua;
+    background-color: black;
+    color: aliceblue;
+   margin-left: 60px;
+   width: 180px;
+   height: 60px;
+}
+
+#tabela-medida-btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(24, 18, 18);
+    transition: 0.5s;
+}
+
+#provador-btn
+{
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: aqua;
+    background-color: black;
+    color: aliceblue;
+   margin-left: 60px;
+   width: 180px;
+   height: 60px;
+}
+
+#provador-btn:hover
+{
+    cursor: pointer;
+    background-color: rgb(24, 18, 18);
+    transition: 0.5s;
+}
+
+.description
+{
+    margin-top: 30px;
+}
+
+.prices
+{
+    font-size: 105%;
+    margin-top: 30px;
+}
+
+#discont
+{
+    display: inline;
+    margin-left: 15px;
+    color: green;
+}
+
+#current-price
+{
+    margin-left: 15px;
+}
+
+#full-price
+{
+    display: inline;
+}
+
+
+#comprar
+{
+    cursor: pointer;
+    border-radius: 50px;
+    border-color: aqua;
+    background-color: black;
+    color: aliceblue;
+    margin-left: 340px;
+   width: 190px;
+   height: 70px;
+}
+
+#comprar:hover{
+    
+    cursor: pointer;
+    background-color: rgb(24, 18, 18);
+    transition: 0.5s;
+}

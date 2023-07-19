@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/sizebay-logo_1200x1200.png" alt="Logo">
+        <input id="Search" type="text" placeholder="Busque aqui...">
+    </header>
+    <main>
+        <div class="content">
+            <div class="slides">
+                <input class="input" type="radio" name="slide" id="slide1" checked>
+                <input class="input" type="radio" name="slide" id="slide2">
+                <input class="input" type="radio" name="slide" id="slide3">
+                <input class="input" type="radio" name="slide" id="slide4">            
+            
+                <div class="slide s1">
+                    <img src="images/First_Image.jpg" alt="">
+                </div>
+            
+                <div class="slide">
+                    <img src="images/Second_Image.jpeg" alt="">
+                </div>
+            
+                <div class="slide">
+                    <img src="images/Third_Image.jpeg" alt="">
+                </div>
+            
+                <div class="slide">
+                    <img src="images/Fourth_Image.jpeg" alt="">
+                </div>
+    
+            </div>
+        </div>
+            
+        <div class="navigation">
+            <label class="bar" for="slide1"></label>
+            <label class="bar" for="slide2"></label>
+            <label class="bar" for="slide3"></label>
+            <label class="bar" for="slide4"></label>
+        </div>
+            
+            
+        <script src="./script.js"></script>
+    </main>
+    <aside>
+        <div class="info">
+            <div class="title">
+                <h1>Regata de Basquete Lakers</h1>
+            </div>
+            <div>
+                <p>Honrando uma rica herança de basquete, esta camisa do Los Angeles Lakers é inspirada no que os
+                    profissionais usam na quadra, desde detalhes do time até o mesh leve que absorve o suor. 
+                    Ele ajuda a manter você seco e fresco, dentro e fora das quadras,
+                    enquanto você representa o seu jogador favorito e o jogo que você ama.</p>
+            </div>
+            <div class="sizes-btn">
+                <table>
+                    <tr>
+                        <td><button class="size">P</button></td>
+                        <td><button class="size">M</button></td> 
+                        <td><button onclick="Firstlink()" id="provador-btn">Provador Virtual</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="size">G</button></td>
+                        <td><button class="size">GG</button></td>
+                        <td><button onclick="Secondlink()" id="tabela-medida-btn">Tabela de Medidas</button></td> 
+                    </tr>
+                </table>
+            </div>     
+            <div class="description"> 
+                <p>Composição de 100% poliéster leve e de dupla camada, 
+                    o que elimina a sua transparência. Sua construção 
+                    proporciona conforto, toque macio, secagem super rápida,
+                    respirabilidade, leveza e caimento.</p>
+                    
+                <div class="prices">
+                    <p id="full-price">R$ 590,99</p>
+                    <s id="current-price">R$650,00</s>   
+                    <p id="discont"> %20 off</p>
+                </div>
+            </div>
+            <button id="comprar">Adicionar ao Carrinho</button>
+        </div>
+        <script src="./script.js"></script>
+    </aside>
+    <footer>
+    </footer>
+</body>
+</html>
